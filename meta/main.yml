@@ -1,0 +1,15 @@
+---
+galaxy_info:
+  author: gsfjohnson
+  description: TACACS+ ansible role
+  company: nil
+  license: Apache
+  min_ansible_version: 1.2
+  platforms:
+  - name: EL
+    versions:
+    - 6
+  categories:
+  - database:nosql
+  - system
+dependencies: []

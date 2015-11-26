@@ -1,0 +1,13 @@
+---
+
+- name: add repo
+  copy:
+    src=home_gsfjohnson.repo
+    dest=/etc/yum.repos.d/home_gsfjohnson.repo
+    mode={{tp_mode}}
+
+- name: install pkg
+  yum:
+    name={{tp_pkg_name}}
+    state={{tp_pkg_state}}
+

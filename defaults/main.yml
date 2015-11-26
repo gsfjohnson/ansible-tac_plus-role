@@ -1,0 +1,12 @@
+---
+
+tp_pkg_name: tac_plus
+tp_pkg_state: installed
+
+tp_svc_name: tac_plus
+tp_svc_state: started
+tp_svc_enabled: true
+
+tp_owner: root
+tp_group: root
+tp_mode: "0644"

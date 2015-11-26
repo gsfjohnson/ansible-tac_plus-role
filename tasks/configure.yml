@@ -1,0 +1,17 @@
+---
+
+- name: tac_plus.conf template
+  template:
+    src=tac_plus.conf.j2
+    dest=/etc/tac_plus.conf
+    owner={{tp_owner}}
+    group={{tp_group}}
+    mode={{tp_mode}}
+  notify: svc restart tac_plus
+
+- name: service enable, start
+  service:
+    name={{tp_svc_name}}
+    state={{tp_svc_state}}
+    enabled={{tp_svc_enabled}}
+
